@@ -1,0 +1,111 @@
+body{
+    background: linear-gradient(45deg, rgba(0, 131, 207, 0.719),rgb(68, 241, 0));
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: rpw;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px;
+}
+input[type=number]{
+    height: 20px;
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+    margin: 10px;
+    margin-top:-10px;
+    padding: 10px;
+    font-size: larger;
+    outline: invert;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.76);
+    font-family: 'Courier New', Courier, monospace;
+}
+#result1, #result2{
+    font-weight: bolder;
+}
+
+input[type=text]:focus{
+    background-color: rgb(168, 168, 168);
+    color: #000;
+}
+
+button[type=submit]{
+    background-color: rgb(30, 255, 0);
+    padding: 10px;
+    border: 2px solid black;
+    width: 150px;
+    cursor: pointer;
+    transition: all 1.5s;
+    margin: 5px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+button[type=submit]:hover{
+    background-color: rgb(253, 228, 0);
+    transform: scale(1.1);
+}
+
+h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+    body{
+        background: rgba(31, 20, 20, 0.795);
+    }
+    .holder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        position: absolute;
+        top: 0%;
+        left: 2%;
+    }
+    input[type=text]{
+        height: auto;
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    body{
+        background: rgba(31, 20, 20, 0.795);
+        width: auto;
+    }
+    .holder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        position: absolute;
+        top: 0%;
+        left: 8%;
+    }
+    .container{
+        border: 2px solid rgb(255, 251, 4);
+    }
+    input[type=text]{
+        height: 15px;
+        width: 200px;
+    }
+}
